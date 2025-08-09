@@ -1,7 +1,7 @@
 /* X-Small: <576px */
 @media (max-width: 575.98px) {
     header {
-        padding: 2rem 5% 0 ;
+        padding: 2rem 5% 0;
     }
 
     .navigation {
@@ -54,11 +54,15 @@
         padding: 1.8rem 1.2rem;
         font-size: 0.9rem;
     }
-    .main-body{
-       grid-template-columns: 1fr;
+
+    .main-body {
+        grid-template-columns: 1fr;
     }
-    .btn-grad{
-        font-size: .9rem;
+
+    .btn-grad {
+        font-size: .6rem;
+        padding: 1rem 2rem;
+
     }
 }
 
@@ -118,10 +122,12 @@
         padding: 1.8rem 1.2rem;
         font-size: 0.9rem;
     }
-     .main-body{
-       grid-template-columns: 1fr;
+
+    .main-body {
+        grid-template-columns: 1fr;
     }
-    .btn-grad{
+
+    .btn-grad {
         font-size: .9rem;
     }
 }
@@ -180,10 +186,17 @@
         padding: 1.8rem .9rem;
         font-size: 0.9rem;
     }
-     .main-body{
-       grid-template-columns: 1fr;
+
+    .main-body {
+        grid-template-columns: 1fr;
     }
-    
+
+    .btn-grad {
+        font-size: .8rem;
+        padding: 1rem 2rem;
+
+    }
+
 }
 
 /* Large: ≥992px */
@@ -195,6 +208,12 @@
     .logo a {
         font-size: 2.7rem;
     }
+
+    .btn-grad {
+        font-size: .7rem;
+        padding: 1rem 2rem;
+
+    }
 }
 
 /* Extra large: ≥1200px */
@@ -202,11 +221,17 @@
     .logo a {
         font-size: 3rem;
     }
+    .body-title{
+        width: 100%;
+    }
 }
 
 /* Extra extra large: ≥1400px */
 @media (min-width: 1400px) {
     .logo a {
         font-size: 3.2rem;
+    }
+    .body-title{
+        width: 100%;
     }
 }

@@ -42,7 +42,7 @@ header {
     background: linear-gradient(to right, #bdc3c7 0%, #2c3e50 51%, #bdc3c7 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 8px #bdc3c7e4;
+    
 }
 
 .hide {
