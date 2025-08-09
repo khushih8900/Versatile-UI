@@ -116,7 +116,7 @@ nav a.active {
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 4rem 0;
+    padding: 4rem 0 0;
     gap: 2rem;
 }
 
@@ -124,7 +124,7 @@ nav a.active {
     width: 100%;
     display: flex;
     align-items: start;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -134,10 +134,42 @@ nav a.active {
     font-weight: 900;
     text-align: left;
 }
-
+.body-title h1 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .1rem  #fff;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes display-text {
+    25%,
+    100%{
+        display: none;
+    }
+    
+}
+.body-title h1 span::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: .2rem solid #fff;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text {
+    10%,100%{
+        width: 0;
+    }
+   70%,90%{
+        width:100%;
+    } 
+    
+}
 .body-title p {
     color: rgba(255, 255, 255, 0.5);
-
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
@@ -148,12 +180,13 @@ nav a.active {
 
 .shape-text {
     font-family: "Great Vibes", cursive;
-    font-size: 6rem;
+    padding: 1rem;
+    font-size: 5rem;
     font-style: italic;
     font-weight: 500;
-    background: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #e1e3eb;
+   
+    margin:0 .4rem;
 }
 
 .buttons {
@@ -163,7 +196,7 @@ nav a.active {
 }
 
 .btn-grad {
-    background: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%)
+    background: linear-gradient(to right, #bdc3c7 0%, #2c3e50 51%, #bdc3c7 100%);
 }
 
 .btn-grad {
@@ -175,7 +208,7 @@ nav a.active {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: #757F9A;
+    color: #e1e3eb;
     box-shadow: 0 0 20px #eee;
     border-radius: 50px;
     display: block;
@@ -190,25 +223,95 @@ nav a.active {
     text-decoration: none;
 }
 
-.hero{
+.hero {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    background-color: aqua;
+    justify-content: center;
+    align-items: center;
 }
-.hero-img{
+
+.hero-img {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    background-color: blue;
+    position: relative;
 
 }
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
 .sub-title {
-    width: 30%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 55%;
+    left: -15%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+
 }
 
+.sub-title2 {
+    position: absolute;
+    width: 50%;
+    top: 22%;
+    right: -14%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.sub-title2 .span {
+    border-radius: 8px;
+}
+
+.span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #35363a7e;
+
+    padding: 1rem .5rem;
+
+}
+
+.span h5 {
+    color: #e3e8ec;
+    font-size: 2rem;
+    font-weight: 900;
+    align-items: center;
+}
+
+
+.span i {
+    margin-right: 1rem;
+
+    color: #8b0202;
+    font-size: 1.5rem;
+
+}
+
+.span p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 500;
+
+
+}
 .sub-title video {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+
 }
