@@ -107,6 +107,9 @@
     .table-info {
         width: 100%;
     }
+    .getStart, .footer{
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -227,6 +230,9 @@
     .team {
         grid-template-columns: 1fr;
     }
+    .getStart, .footer{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Medium: ≥768px */
@@ -328,6 +334,9 @@
 
     .team {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .footer{
+        grid-template-columns: 1fr;
     }
 
 }

@@ -49,3 +49,11 @@ function calculateBMI() {
   resultDiv.className = "result " + cssClass;
   resultDiv.innerHTML = `Your BMI is <strong>${bmi.toFixed(1)}</strong> (${status})`;
 }
+/QNA section/ 
+const qnaItems = document.querySelectorAll('.qna-item');
+
+qnaItems.forEach(item => {
+  item.querySelector('.qna-question').addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});

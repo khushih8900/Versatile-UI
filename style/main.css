@@ -881,8 +881,154 @@ select:focus {
 .member p {
     color: rgba(255, 255, 255, 0.7);
 
-    font-size:.8rem;
+    font-size: .8rem;
     font-weight: 400;
     line-height: 1rem;
     text-align: left;
+}
+
+/* QNA section */
+.qna-container {
+    width: 100%;
+    padding: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,
+            rgba(13, 12, 12, 1) 0%,
+            rgba(96, 96, 102, 0.99) 46%,
+            rgba(96, 96, 102, 0.98) 40%,
+            rgba(13, 12, 12, 1) 100%);
+
+}
+
+.all-qna {
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+
+}
+
+.qna-item {
+    border-bottom: 1px solid #cccccc3f;
+    padding: 3rem;
+
+}
+
+.qna-question {
+    color: #bdc3c7;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+.qna-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.qna-item.active .qna-question::after {
+    content: '-';
+}
+
+.qna-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 16px;
+    color: #c5b9b9;
+}
+
+.qna-item.active .qna-answer {
+    max-height: 200px;
+    /* enough to show text */
+}
+
+/* start footer */
+footer {
+    width: 100%;
+    padding: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,
+            rgba(13, 12, 12, 1) 0%,
+            rgba(96, 96, 102, 0.99) 46%,
+            rgba(96, 96, 102, 0.98) 40%,
+            rgba(13, 12, 12, 1) 100%);
+}
+
+.footer {
+    padding: 1rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-info h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: left;
+    background: linear-gradient(to right, #bdc3c7 0%, #2c3e50 51%, #bdc3c7 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    letter-spacing: 0.3px;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.getStart {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.started h3 {
+    color: rgb(165, 154, 154);
+    margin: 1rem 0;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.started ul a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: left;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-top: 1rem;
 }
