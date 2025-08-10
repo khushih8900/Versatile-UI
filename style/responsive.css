@@ -68,7 +68,36 @@
     .habit-info {
         grid-template-columns: 1fr;
     }
+
+    .training,
+    .training-info {
+        width: 100%;
+    }
+
+    .grid1 {
+        display: block;
+
+    }
+
+    .video2 {
+        display: none;
+    }
+
+    .video1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-info {
+        width: 100%;
+    }
+
+    .bmi-container {
+        grid-template-columns: 1fr;
+    }
+
 }
+
 
 /* Small: ≥576px */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -146,10 +175,32 @@
     }
 
 
-    .video1,
+
+    .training,
+    .training-info {
+        width: 100%;
+    }
+
+    .grid1 {
+        display: block;
+
+    }
+
     .video2 {
-        grid-template-columns: 1fr 1fr;
-        /* প্রতি লাইনে ২টা ভিডিও */
+        display: none;
+    }
+
+    .video1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .table-info {
+        width: 100%;
+    }
+
+    .bmi-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -222,6 +273,29 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .training,
+    .training-info {
+        width: 100%;
+    }
+
+    .grid1 {
+        display: block;
+
+    }
+
+    .video2 {
+        display: none;
+    }
+
+    .video1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bmi {
+        width: 100%;
+    }
+
 }
 
 /* Large: ≥992px */
@@ -243,6 +317,11 @@
     .habit-info {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .bmi {
+        width: 100%;
+    }
+
 }
 
 /* Extra large: ≥1200px */
@@ -258,9 +337,15 @@
     .habits {
         width: 100%;
     }
+
+    .bmi {
+        width: 100%;
+    }
+
 }
 
 /* Extra extra large: ≥1400px */
+
 @media (min-width: 1400px) {
     .logo a {
         font-size: 3.2rem;
@@ -269,4 +354,9 @@
     .body-title {
         width: 100%;
     }
+
+    .bmi {
+        width: 100%;
+    }
+
 }

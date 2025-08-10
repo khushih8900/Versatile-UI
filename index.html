@@ -134,7 +134,7 @@
             <button class="btn-grad" type="submit">Join Now</button>
           </div>
         </div>
-        <div class="hero hero-video">
+        <div class="hero-video">
           <video
             autoplay
             muted
@@ -151,7 +151,8 @@
         <h1>Trainings and Exercises</h1>
         <p>
           We believe fitness should be accessible to everyone, everywhere,
-          regardless of income or access to a gym.
+          regardless of income or <br />
+          access to a gym.
         </p>
       </div>
       <div class="training-video">
@@ -174,7 +175,7 @@
               playsinline
               src="images/push-uo.mp4"
             ></video>
-            <div class="after">
+            <div class="after after2">
               Leg Press: Works the quadriceps and glut sum
             </div>
           </div>
@@ -186,7 +187,9 @@
               playsinline
               src="images/jump-video.mp4"
             ></video>
-            <div class="after">Leg Press: Works the quadriceps and glu tes</div>
+            <div class="after after3">
+              Leg Press: Works the quadriceps and glu tes
+            </div>
           </div>
 
           <div class="video grid1">
@@ -197,7 +200,9 @@
               playsinline
               src="images/push-out.mp4"
             ></video>
-            <div class="after">Leg Press: Works the quadriceps and glu tes</div>
+            <div class="after after4">
+              Leg Press: Works the quadriceps and glu tes
+            </div>
           </div>
           <div class="video grid1">
             <video
@@ -207,7 +212,7 @@
               playsinline
               src="images/pull-dwon.mp4"
             ></video>
-            <div class="after">Lorem Ipsum</div>
+            <div class="after after5">Lorem Ipsum</div>
           </div>
           <div class="video grid1">
             <video
@@ -217,10 +222,12 @@
               playsinline
               src="images/roop-sync.mp4"
             ></video>
-            <div class="after">Leg Press: Works the quadriceps and glu tes</div>
+            <div class="after after6">
+              Leg Press: Works the quadriceps and glu tes
+            </div>
           </div>
         </div>
-        <div class="video2 grid">
+        <div class="video2">
           <div class="video">
             <video
               autoplay
@@ -229,7 +236,9 @@
               playsinline
               src="images/push-out.mp4"
             ></video>
-            <div class="after">Leg Press: Works the quadriceps and glu tes</div>
+            <div class="after after4">
+              Leg Press: Works the quadriceps and glu tes
+            </div>
           </div>
           <div class="video">
             <video
@@ -239,7 +248,7 @@
               playsinline
               src="images/pull-dwon.mp4"
             ></video>
-            <div class="after">Lorem Ipsum</div>
+            <div class="after after5">Lorem Ipsum</div>
           </div>
           <div class="video">
             <video
@@ -249,7 +258,81 @@
               playsinline
               src="images/roop-sync.mp4"
             ></video>
-            <div class="after">Leg Press: Works the quadriceps and glu tes</div>
+            <div class="after after6">
+              Leg Press: Works the quadriceps and glu tes
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BMI Calculator -->
+    <section class="bmi">
+      <div class="table">
+        <div class="table-info">
+          <h1>BMI Calculator Chart</h1>
+          <p>
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+
+        <div class="bmi-container">
+          <!-- BMI Chart -->
+          <div class="chart">
+            <h2>BMI Calculator Chart</h2>
+            <table>
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- BMI Form -->
+          <div class="form-container">
+            <!-- <div class="measurement">258</div> -->
+            <h2>Calculate your BMI</h2>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. 
+            </p>
+
+            <div class="input-group">
+              <input type="number" id="height" placeholder="Height/cm" />
+              <input type="number" id="weight" placeholder="Weight/kg" />
+            </div>
+            <div class="input-group">
+              <input type="number" placeholder="Age" />
+              <select>
+                <option>Sex</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+            <select >
+              <option>Select an activity factor</option>
+              <option>Low</option>
+              <option>Moderate</option>
+              <option>High</option>
+            </select>
+            <button class="form-button" onclick="calculateBMI()">Calculate</button>
+
+            <div id="result" class="result"></div>
           </div>
         </div>
       </div>

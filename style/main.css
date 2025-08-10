@@ -429,11 +429,15 @@ nav a.active {
 }
 
 .hero-video video {
+    width: 100%;
     border-radius: 8px;
+    overflow: hidden;
+
 }
 
 .hero-video {
     padding: 2rem;
+    border-radius: 8px;
     overflow: hidden;
 
 
@@ -461,7 +465,7 @@ nav a.active {
 
 .training-info {
     padding: 1rem;
-    width: 60%;
+
 }
 
 .training-info h1 {
@@ -476,7 +480,7 @@ nav a.active {
 .training-info p {
     color: rgba(255, 255, 255, 0.5);
     padding: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 2rem;
     text-align: left;
@@ -486,6 +490,8 @@ nav a.active {
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .video1 {
@@ -495,6 +501,8 @@ nav a.active {
 }
 
 .video2 {
+
+
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
 }
@@ -517,16 +525,44 @@ nav a.active {
     width: 100%;
     height: 100%;
     z-index: 02;
-}
-
-.video1 .video:nth-child(1) {
-    color: rgb(245, 245, 245); 
-    
-
-    font-size: 1.5rem;
+    color: rgb(253, 251, 251);
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 100%;
 }
+
+.after2 {
+    background: rgba(255, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.after3 {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.after4 {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: start;
+    text-align: right;
+    justify-content: right;
+    padding: 1rem;
+}
+
+.after5 {
+    background: rgba(66, 255, 0, 0.3);
+}
+
+.after6 {
+    background: rgba(0, 71, 255, 0.3);
+}
+
+
+
 
 .video video {
     width: 100%;
@@ -534,4 +570,224 @@ nav a.active {
     overflow: hidden;
     object-fit: cover;
     position: relative;
+}
+
+/* BMI Calculator */
+.bmi {
+
+    width: 100%;
+    height: auto;
+    padding: 5rem 10%;
+    background: linear-gradient(180deg,
+            rgba(13, 12, 12, 1) 0%,
+            rgba(96, 96, 102, 0.99) 46%,
+            rgba(96, 96, 102, 0.98) 40%,
+            rgba(13, 12, 12, 1) 100%);
+
+
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.table-info {
+    width: 50%;
+}
+
+.table-info h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+    padding: 1rem;
+}
+
+.table-info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: left;
+    padding: 1rem;
+
+}
+
+.bmi-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+
+.chart {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.chart h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+}
+
+table,
+th {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    padding: .8rem;
+
+}
+
+td {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    padding: 1rem;
+    text-align: left;
+
+
+}
+
+
+.form-container {
+    border-radius: 8px;
+    position: relative;
+}
+
+.form-container h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: left;
+}
+
+.form-container p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.input-group {
+    display: flex;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+input,
+select {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    color: #949090ee;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+input::placeholder{
+    color: #beb9b9c7;
+
+}
+
+input,
+select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.form-button {
+    background: linear-gradient(to right, #bdc3c7 0%, #2c3e50 51%, #bdc3c7 100%);
+}
+
+.form-button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+
+}
+
+.form-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Measurement Line */
+.measurement {
+    position: absolute;
+    top: -30px;
+    left: -60px;
+    background: #ff4d4d;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.measurement::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -258px;
+    /* length of measurement */
+    width: 258px;
+    border-top: 1px dotted red;
+}
+
+/* Result Section */
+.result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+}
+
+.underweight {
+    background: #3498db;
+}
+
+.healthy {
+    background: #2ecc71;
+}
+
+.overweight {
+    background: #f39c12;
+}
+
+.obese {
+    background: #e74c3c;
 }
