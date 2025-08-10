@@ -96,6 +96,18 @@
         grid-template-columns: 1fr;
     }
 
+    .team-info {
+        width: 100%;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+    }
+
+    .table-info {
+        width: 100%;
+    }
+
 }
 
 
@@ -202,6 +214,19 @@
     .bmi-container {
         grid-template-columns: 1fr;
     }
+
+    .table-info {
+        width: 100%;
+    }
+
+
+    .team-info {
+        width: 100%;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Medium: ≥768px */
@@ -296,6 +321,15 @@
         width: 100%;
     }
 
+    .table-info {
+        width: 100%;
+    }
+
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* Large: ≥992px */
@@ -321,6 +355,7 @@
     .bmi {
         width: 100%;
     }
+
 
 }
 
