@@ -26,6 +26,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, rgb(5, 5, 10) 0%, rgb(5, 5, 10) 7.692%, rgb(9, 10, 14) 7.692%, rgb(9, 10, 14) 15.385%, rgb(13, 14, 18) 15.385%, rgb(13, 14, 18) 23.077%, rgb(18, 19, 22) 23.077%, rgb(18, 19, 22) 30.769%, rgb(22, 23, 26) 30.769% 30.769%, rgb(22, 23, 26) 38.462%, rgb(26, 27, 30) 38.462%, rgb(26, 27, 30) 46.154%, rgb(30, 31, 34) 46.154%, rgb(30, 31, 34) 53.846%, rgb(34, 35, 38) 53.846%, rgb(34, 35, 38) 61.538%, rgb(38, 39, 42) 61.538%, rgb(38, 39, 42) 69.231%, rgb(41, 42, 45) 69.231%, rgb(41, 42, 45) 76.923%, rgb(44, 45, 48) 76.923%, rgb(44, 45, 48) 84.615%, rgb(46, 47, 51) 84.615%, rgb(46, 47, 51) 92.308%, rgb(48, 49, 53) 92.308%, rgb(48, 49, 53) 100%);
+
 }
 
 .navigation {
@@ -42,7 +43,7 @@ header {
     background: linear-gradient(to right, #bdc3c7 0%, #2c3e50 51%, #bdc3c7 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 .hide {
@@ -118,6 +119,7 @@ nav a.active {
     grid-template-columns: repeat(2, 1fr);
     padding: 4rem 0 0;
     gap: 2rem;
+
 }
 
 .body-title {
@@ -134,22 +136,26 @@ nav a.active {
     font-weight: 900;
     text-align: left;
 }
-.body-title h1 span{
+
+.body-title h1 span {
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .1rem  #fff;
+    -webkit-text-stroke: .1rem #fff;
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
+
 @keyframes display-text {
+
     25%,
-    100%{
+    100% {
         display: none;
     }
-    
+
 }
-.body-title h1 span::before{
+
+.body-title h1 span::before {
     content: attr(data-text);
     position: absolute;
     width: 0;
@@ -159,15 +165,21 @@ nav a.active {
     overflow: hidden;
     animation: fill-text 4s linear infinite;
 }
+
 @keyframes fill-text {
-    10%,100%{
+
+    10%,
+    100% {
         width: 0;
     }
-   70%,90%{
-        width:100%;
-    } 
-    
+
+    70%,
+    90% {
+        width: 100%;
+    }
+
 }
+
 .body-title p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
@@ -185,8 +197,8 @@ nav a.active {
     font-style: italic;
     font-weight: 500;
     color: #e1e3eb;
-   
-    margin:0 .4rem;
+
+    margin: 0 .4rem;
 }
 
 .buttons {
@@ -308,10 +320,218 @@ nav a.active {
 
 
 }
+
 .sub-title video {
     width: 100%;
     height: 100%;
     overflow: hidden;
     border-radius: 8px 8px 0 0;
 
+}
+
+/* start habits section */
+.habits {
+    width: 100%;
+    padding: 5rem 10%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: linear-gradient(180deg,
+            rgba(13, 12, 12, 1) 0%,
+            rgba(96, 96, 102, 0.99) 46%,
+            rgba(96, 96, 102, 0.98) 40%,
+            rgba(13, 12, 12, 1) 100%);
+}
+
+.habit-title {
+    text-align: center;
+}
+
+.habit-title h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.habit-title p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    letter-spacing: 0.3px;
+    padding: 1rem;
+}
+
+.habit-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.habit-need img {
+
+    object-fit: cover;
+    border-radius: 50%;
+    animation: shadowColor 3s infinite linear;
+}
+
+@keyframes shadowColor {
+    0% {
+        box-shadow: 0 0 15px red;
+    }
+
+    25% {
+        box-shadow: 0 0 15px orange;
+    }
+
+    50% {
+        box-shadow: 0 0 15px lime;
+    }
+
+    75% {
+        box-shadow: 0 0 15px cyan;
+    }
+
+    100% {
+        box-shadow: 0 0 15px red;
+    }
+}
+
+.habit-need {
+    text-align: center;
+}
+
+.habit-need h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0 0.5rem;
+}
+
+.habit-need p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+}
+
+/* start running habit section */
+.hero-run {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10%;
+    background: linear-gradient(180deg,
+            rgba(13, 12, 12, 1) 0%,
+            rgba(96, 96, 102, 0.99) 46%,
+            rgba(96, 96, 102, 0.98) 40%,
+            rgba(13, 12, 12, 1) 100%);
+}
+
+.hero-video video {
+    border-radius: 8px;
+}
+
+.hero-video {
+    padding: 2rem;
+    overflow: hidden;
+
+
+}
+
+.hero-body {
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: rgba(7, 7, 7, 0.4);
+
+}
+
+/* training section */
+.training {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10%;
+    background: linear-gradient(180deg,
+            rgba(13, 12, 12, 1) 0%,
+            rgba(96, 96, 102, 0.99) 46%,
+            rgba(96, 96, 102, 0.98) 40%,
+            rgba(13, 12, 12, 1) 100%);
+
+}
+
+.training-info {
+    padding: 1rem;
+    width: 60%;
+}
+
+.training-info h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+    padding: .5rem;
+
+}
+
+.training-info p {
+    color: rgba(255, 255, 255, 0.5);
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.training-video {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video1 {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.video2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+}
+
+.grid1 {
+    display: none;
+
+}
+
+.video {
+    width: 100%;
+    position: relative;
+}
+
+.after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(6, 255, 210, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 02;
+}
+
+.video1 .video:nth-child(1) {
+    color: rgb(245, 245, 245); 
+    
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
 }
