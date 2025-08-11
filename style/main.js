@@ -57,3 +57,40 @@ qnaItems.forEach(item => {
     item.classList.toggle('active');
   });
 });
+/ star bar-box animation/
+const images = [
+  '/mnt/data/anilla.png',
+  'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80', // অন্য ছবি
+  'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=80'  // আরেকটা ছবি
+];
+
+let currentIndex = 0;
+const bars = document.querySelectorAll('.bar');
+
+function setBackgroundImages(index) {
+  bars.forEach((bar, i) => {
+    bar.style.backgroundImage = `url(${images[index]})`;
+    
+    bar.style.backgroundPositionX = `${-(i) * 100}px`;
+  });
+}
+
+function animateBars() {
+  bars.forEach((bar) => {
+    bar.style.animation = 'none';    // রিসেট
+    bar.offsetHeight;                // reflow trick
+    bar.style.animation = '';       // আবার অ্যানিমেশন চালু
+  });
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  setBackgroundImages(currentIndex);
+  animateBars();
+}
+
+setBackgroundImages(currentIndex);
+animateBars();
+
+setInterval(nextImage, 3000);
+

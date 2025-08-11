@@ -259,7 +259,6 @@ nav a.active {
 
 .sub-title {
     width: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -795,7 +794,6 @@ select:focus {
 
 /* our team */
 .our-team {
-
     width: 100%;
     padding: 5rem 10%;
     display: flex;
@@ -807,9 +805,13 @@ select:focus {
             rgba(96, 96, 102, 0.99) 46%,
             rgba(96, 96, 102, 0.98) 40%,
             rgba(13, 12, 12, 1) 100%);
+    position: relative;
 }
 
+
+
 .team-info {
+
     width: 60%;
     text-align: center;
 }
@@ -830,6 +832,7 @@ select:focus {
 }
 
 .team {
+
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -838,6 +841,8 @@ select:focus {
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
 }
+
+
 
 .tem-member {
     position: relative;

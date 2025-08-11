@@ -84,8 +84,16 @@
     }
 
     .video1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-template-columns: 1fr;
+
+    }
+    .video1 video{
+        border-radius: 8px;
+    }
+    .video{
+        overflow: hidden;
+        border-radius: 8px;
     }
 
     .table-info {
@@ -206,7 +214,7 @@
     }
 
     .video1 {
-        display: grid;
+       gap: 1rem;
         grid-template-columns: 1fr;
     }
 
